@@ -6,11 +6,24 @@
   --color-naranja: #F26904;
   --color-turquesa: #B4687C;
   --color-negro-fondo: #000000;
+  --color-blanco: #ffffff;
 }
 
 /* Fondo */
 body
 {
   background-color: var(--color-negro-fondo);
+  color: var(--color-blanco);
 }
 
+h1
+{
+  background-color: var(--color-negro-fondo);
+  color: var(--color-blanco);
+}
+
+.logo-restaurante
+{
+  margin-top: -7rem;/* para que comience el logo por encima del banner */
+  width: 20rem;/* el logo respeta dimensiones */
+}
