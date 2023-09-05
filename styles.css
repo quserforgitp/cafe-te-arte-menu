@@ -1,0 +1,16 @@
+/* Colores y Configuracion general */
+:root
+{
+  --color-azul: #04A2E5;
+  --color-verde: #04AC23;
+  --color-naranja: #F26904;
+  --color-turquesa: #B4687C;
+  --color-negro-fondo: #000000;
+}
+
+/* Fondo */
+body
+{
+  background-color: var(--color-negro-fondo);
+}
+
