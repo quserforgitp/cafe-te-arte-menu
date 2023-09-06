@@ -12,6 +12,9 @@
   --color-titulos: rgb(195, 74, 9);
   --color-platillos-titulos: #863566;
   --color-platillos-contenido: #6a2d52;
+  
+  user-select: none;
+  pointer-events: none;
 }
 
 /* Fondo */
