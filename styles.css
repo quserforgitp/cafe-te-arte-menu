@@ -14,6 +14,7 @@ body
 {
   background-color: var(--color-negro-fondo);
   color: var(--color-blanco);
+  height: 100vh;
 }
 
 h1
@@ -49,4 +50,18 @@ h1
 .platillo-descripcion
 {
   margin-top: -1rem;
+}
+
+.contenedor-padre
+{
+  height: 100%;
+}
+
+@media (max-width: 1000px)
+{
+  .logo-restaurante
+  {
+    margin-top: -11rem;/* para que comience el logo por encima del banner */
+    width: 20rem;/* el logo respeta dimensiones */
+  }
 }
