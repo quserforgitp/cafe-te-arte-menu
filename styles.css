@@ -22,6 +22,8 @@ body
 {
   background-color: var(--color-fondo);
   height: 100vh;
+  color: #ffff;
+  font-weight: 900;
 }
 
 .contenedor-padre
