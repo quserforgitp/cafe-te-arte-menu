@@ -2,16 +2,16 @@
 :root
 {
 /* PALETA DE COLORES ENACUM */
-  --color-azul: #04A2E5;
+  /* --color-azul: #04A2E5;
   --color-verde: #04AC23;
   --color-naranja: #F26904;
-  --color-turquesa: #B4687C;
+  --color-turquesa: #B4687C; */
 
 /* PLATILLOS  */
-  --color-fondo: #000000;
-  --color-titulos: rgb(195, 74, 9);
-  --color-platillos-titulos: #863566;
-  --color-platillos-contenido: #6a2d52;
+  --color-fondo: #f7ba4c;
+  --color-titulos: #f7ba4c;
+  --color-platillos-titulos: #274c4c;
+  --color-platillos-contenido: #274c4c;
   
   user-select: none;
   pointer-events: none;
@@ -22,41 +22,6 @@ body
 {
   background-color: var(--color-fondo);
   height: 100vh;
-}
-
-h1
-{
-  background-color: var(--color-fondo);
-  color: var(--color-blanco);
-}
-
-.logo-restaurante
-{
-  margin-top: -7rem;/* para que comience el logo por encima del banner */
-  width: 20rem;/* el logo respeta dimensiones */
-}
-
-.titulo-desayunos
-{
-  margin-top: -3rem;
-  font-weight: 900;
-  color: var(--color-titulos);
-}
-
-.platillo
-{
-  color: var(--color-platillos-titulos);
-  font-weight: 900;
-}
-.card-text
-{
-  color: var(--color-platillos-contenido);
-  font-weight: 600;
-}
-
-.platillo-descripcion
-{
-  margin-top: -1rem;
 }
 
 .contenedor-padre
