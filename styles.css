@@ -12,6 +12,7 @@
   --color-titulos: #FAE9D3;
   --color-platillos-titulos: #274c4c;
   --color-platillos-contenido: #274c4c;
+  --general-font-family: 
   
   user-select: none;
   pointer-events: none;
@@ -23,7 +24,6 @@ body
   background-color: var(--color-fondo);
   height: 100vh;
   color: #ffff;
-  font-weight: 900;
 }
 
 .contenedor-padre
@@ -31,23 +31,58 @@ body
   height: 100%;
 }
 
+.contenedor-bebidas
+{
+  position: relative;
+  display: inline-block;
+}
+
+.img-fondo-bebidas
+{
+  width: 50%;
+  height: auto;
+}
+
+.contenido-bebidas
+{
+  position: absolute;
+  top: 0; /* Desde el borde superior del contenedor */
+  left: 50px; /* Desde el borde izquierdo del contenedor */
+  padding: 10px;
+  transform: translateY(-50px);
+  border-radius: 5px;
+  font-size: 0.785rem;
+  color: var(--color-platillos-contenido); /* Establece el color del texto */
+  width: 50%;
+  height: 150%;
+}
+
 .banner-row
 {
   min-height: 150px;
 }
 
-.bebidas-titulo {
+/* .img-titulo-menu
+{
+ 
+  
+} */
+
+.bebidas-titulo
+{
   position: relative;
   display: inline-block; /* Alinea el contenido en línea */
-  transform: translateY(-20px);
+  transform: translate(-30px,-5px);
   color: var(--color-fondo);
 }
 
-.fondo-titulo-bebidas {
+.fondo-titulo-bebidas
+{
   width: 150px;
 }
 
-.titulo {
+.titulo
+{
   position: absolute;
   top: 50%; /* Coloca el texto en el centro vertical */
   left: 50%; /* Coloca el texto en el centro horizontal */
