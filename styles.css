@@ -125,6 +125,12 @@ body
   translate: 30px -70px;
 }
 
+.img-logo-cafe-te-arte
+{
+  translate: -300px;
+  transform: scale(1.3);
+}
+
 
 @media (max-width: 1000px)
 {
