@@ -79,7 +79,15 @@ body
 .fondo-titulo-bebidas
 {
   width: 150px;
-  
+}
+
+.bebida-translation-agua-sabor
+{
+  transform: translateY(-30px);
+}
+.bebida-translation-coca
+{
+  transform: translateY(-70px);
 }
 
 .titulo
@@ -95,15 +103,27 @@ body
 
 .bebida
 {
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 900;
 }
 .precio
 {
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 900;
+}
+.tipos-bebida
+{
+  font-size: 10px;
 }
 .nota-producto
 {
-  font-size: 10px;
+  font-size: 8px;
+}
+.naranja-img
+{
+  
+  margin-left: 100px;
+  translate: 30px -70px;
 }
 
 
