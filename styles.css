@@ -12,7 +12,7 @@
   --color-titulos: #FAE9D3;
   --color-platillos-titulos: #274c4c;
   --color-platillos-contenido: #274c4c;
-  --general-font-family: 
+  --general-font-family: 'Montserrat', sans-serif;
   
   user-select: none;
   pointer-events: none;
@@ -24,6 +24,7 @@ body
   background-color: var(--color-fondo);
   height: 100vh;
   color: #ffff;
+  font-family: var(--general-font-family);
 }
 
 .contenedor-padre
@@ -47,13 +48,13 @@ body
 {
   position: absolute;
   top: 0; /* Desde el borde superior del contenedor */
-  left: 50px; /* Desde el borde izquierdo del contenedor */
+  left: 30px; /* Desde el borde izquierdo del contenedor */
   padding: 10px;
   transform: translateY(-50px);
   border-radius: 5px;
   font-size: 0.785rem;
   color: var(--color-platillos-contenido); /* Establece el color del texto */
-  width: 50%;
+  width: 45%;
   height: 150%;
 }
 
@@ -62,11 +63,10 @@ body
   min-height: 150px;
 }
 
-/* .img-titulo-menu
+.img-titulo-menu
 {
- 
-  
-} */
+  transform: scale(2);  
+}
 
 .bebidas-titulo
 {
@@ -79,6 +79,7 @@ body
 .fondo-titulo-bebidas
 {
   width: 150px;
+  
 }
 
 .titulo
@@ -90,6 +91,19 @@ body
   padding: 10px; /* Añade espacio alrededor del texto */
   border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
   font-size: 18px; /* Establece el tamaño de fuente deseado */
+}
+
+.bebida
+{
+  font-size: 18px;
+}
+.precio
+{
+  font-size: 18px;
+}
+.nota-producto
+{
+  font-size: 10px;
 }
 
 
