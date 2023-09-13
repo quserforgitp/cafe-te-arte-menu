@@ -36,6 +36,28 @@ body
   min-height: 150px;
 }
 
+.bebidas-titulo {
+  position: relative;
+  display: inline-block; /* Alinea el contenido en línea */
+  transform: translateY(-20px);
+  color: var(--color-fondo);
+}
+
+.fondo-titulo-bebidas {
+  width: 150px;
+}
+
+.titulo {
+  position: absolute;
+  top: 50%; /* Coloca el texto en el centro vertical */
+  left: 50%; /* Coloca el texto en el centro horizontal */
+  transform: translate(-50%, -50%); /* Centra el texto */
+  padding: 10px; /* Añade espacio alrededor del texto */
+  border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
+  font-size: 18px; /* Establece el tamaño de fuente deseado */
+}
+
+
 @media (max-width: 1000px)
 {
   .logo-restaurante
