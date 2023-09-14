@@ -134,9 +134,5 @@ body
 
 @media (max-width: 1000px)
 {
-  .logo-restaurante
-  {
-    margin-top: -12rem;/* para que comience el logo por encima del banner */
-    width: 20rem;/* el logo respeta dimensiones */
-  }
+  
 }
