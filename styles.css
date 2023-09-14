@@ -18,7 +18,7 @@
   pointer-events: none;
 }
 
-/* Fondo */
+/* ESTILOS GENERALES (HEREDITARIOS) */
 body
 {
   background-color: var(--color-fondo);
@@ -27,11 +27,25 @@ body
   font-family: var(--general-font-family);
 }
 
+/* ESTILOS DEL CONTENIDO */
+
+/* PARA TODO EL CONTENIDO */
 .contenedor-padre
 {
   height: 100%;
 }
 
+/* UPPER BANNER */
+.banner-row
+{
+  min-height: 150px;
+}
+.img-titulo-menu
+{
+  transform: scale(2);  
+}
+
+/* BEBIDAS Y LOGO */
 .contenedor-general-bebidas-logo
 {
   background-image: url("./img/fondo-logo-cafe-te-arte.svg");
@@ -65,16 +79,6 @@ body
   height: 150%;
 }
 
-.banner-row
-{
-  min-height: 150px;
-}
-
-.img-titulo-menu
-{
-  transform: scale(2);  
-}
-
 .bebidas-titulo
 {
   position: relative;
@@ -89,15 +93,6 @@ body
   transform: scaleX(1.3);
 }
 
-.bebida-translation-agua-sabor
-{
-  transform: translateY(-30px);
-}
-.bebida-translation-coca
-{
-  transform: translateY(-70px);
-}
-
 .titulo
 {
   position: absolute;
@@ -109,6 +104,7 @@ body
   font-size: 25px; /* Establece el tamaño de fuente deseado */
 }
 
+/* Lista del menu bebidas */
 .bebida
 {
   font-size: 12px;
@@ -127,12 +123,19 @@ body
 {
   font-size: 8px;
 }
+.bebida-translation-agua-sabor
+{
+  transform: translateY(-30px);
+}
+.bebida-translation-coca
+{
+  transform: translateY(-70px);
+}
 .naranja-img
 {
   margin-left: 100px;
   translate: 30px -70px;
 }
-
 .img-logo-cafe-te-arte
 {
   translate: -300px;
@@ -140,6 +143,8 @@ body
 }
 
 
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 1000px)
 {
   
