@@ -32,6 +32,13 @@ body
   height: 100%;
 }
 
+.contenedor-general-bebidas-logo
+{
+  background-image: url("./img/fondo-logo-cafe-te-arte.svg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: rgba(255, 255, 255, 0);
+}
 .contenedor-bebidas
 {
   position: relative;
@@ -79,6 +86,7 @@ body
 .fondo-titulo-bebidas
 {
   width: 150px;
+  transform: scaleX(1.3);
 }
 
 .bebida-translation-agua-sabor
@@ -98,7 +106,7 @@ body
   transform: translate(-50%, -50%); /* Centra el texto */
   padding: 10px; /* Añade espacio alrededor del texto */
   border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
-  font-size: 18px; /* Establece el tamaño de fuente deseado */
+  font-size: 25px; /* Establece el tamaño de fuente deseado */
 }
 
 .bebida
