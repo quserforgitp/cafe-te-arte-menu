@@ -51,7 +51,6 @@ body
   background-image: url("./img/fondo-logo-cafe-te-arte.svg");
   background-size: cover;
   background-repeat: no-repeat; 
-  background-color: rgba(255, 255, 255, 0);
 }
 .contenedor-bebidas
 {
@@ -145,9 +144,53 @@ body
 .img-burrito
 {
   width: 20%;
-  z-index: 1;
   transform: translate(-400px,0px);
 }
+.contenedor-postres
+{
+  position: relative;
+  display: inline-block;
+}
+.postres-titulo
+{
+  position: relative;
+  display: inline-block; /* Alinea el contenido en línea */
+  transform: translate(10%,-200px);
+  color: var(--color-fondo);
+}
+.img-fondo-postres
+{
+  width: 50%;
+  height: auto;
+}
+.contenido-postres
+{
+  position: absolute;
+  top: 50%; /* Desde el borde superior del contenedor */
+  left: 30%; /* Desde el borde izquierdo del contenedor */
+  padding: 10px;
+  transform: translateY(-50px);
+  border-radius: 5px;
+  font-size: 0.785rem;
+  color: var(--color-platillos-contenido); /* Establece el color del texto */
+  width: 40%;
+  height: 150%;
+}
+.fondo-titulo-postres
+{
+  width: 150px;
+  transform: scaleX(1.3);
+}
+.postre
+{
+  font-size: 12px;
+  font-weight: 900;
+}
+.tipos-postre
+{
+  font-size: 10px;
+}
+
 
 
 
