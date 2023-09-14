@@ -103,7 +103,6 @@ body
   border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
   font-size: 25px; /* Establece el tamaño de fuente deseado */
 }
-
 /* Lista del menu bebidas */
 .bebida
 {
@@ -140,6 +139,14 @@ body
 {
   translate: -300px;
   transform: scale(1.3);
+}
+
+/* IMG BURRITO Y POSTRES */
+.img-burrito
+{
+  width: 20%;
+  z-index: 1;
+  transform: translate(-400px,0px);
 }
 
 
