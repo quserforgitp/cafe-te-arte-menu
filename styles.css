@@ -218,6 +218,65 @@ body
   font-weight: 900;
 }
 
+/* DESAYUNOS IZQ */
+.desayunos-izq-row
+{
+  background-color: none;
+}
+.contenedor-desayunos-izq
+{
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.desayonos-izq-titulo
+{
+  position: relative;
+  display: inline-block; /* Alinea el contenido en línea */
+  transform: translate(20%,-90px);
+  color: var(--color-fondo);
+}
+.img-fondo-desayunos-izq
+{
+  width: 70%;
+  height: auto;
+  
+}
+.contenido-desayunos-izq
+{
+  position: absolute;
+  top: 55%; /* Desde el borde superior del contenedor */
+  left: 60%; /* Desde el borde izquierdo del contenedor */
+  padding: 10px;
+  transform: translate(-200px,-150px);
+  border-radius: 5px;
+  font-size: 0.785rem;
+  color: var(--color-platillos-contenido); /* Establece el color del texto */
+  width: 35%;
+  height: 150%;
+  
+}
+.fondo-titulo-desayunos-izq
+{
+  width: 150px;
+  transform: scaleX(1.3);
+}
+.desayuno-izq
+{
+  font-size: 15px;
+  font-weight: 900;
+}
+.tipos-desayuno-izq
+{
+  font-size: 12px;
+}
+.precio-desayuno-izq
+{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1000px)
 {
