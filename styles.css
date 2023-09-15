@@ -205,12 +205,17 @@ body
 }
 .postre
 {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 900;
 }
 .tipos-postre
 {
-  font-size: 10px;
+  font-size: 12px;
+}
+.precio-postre
+{
+  font-size: 15px;
+  font-weight: 900;
 }
 
 /* RESPONSIVE DESIGN */
