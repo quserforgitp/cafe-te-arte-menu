@@ -1,284 +1,85 @@
-/* Colores y Configuracion general */
 :root
 {
-/* PALETA DE COLORES ENACUM */
-  /* --color-azul: #04A2E5;
-  --color-verde: #04AC23;
-  --color-naranja: #F26904;
-  --color-turquesa: #B4687C; */
-
-/* PLATILLOS  */
-  --color-fondo: #FAE9D3;
-  --color-titulos: #FAE9D3;
-  --color-platillos-titulos: #274c4c;
-  --color-platillos-contenido: #274c4c;
-  --general-font-family: 'Montserrat', sans-serif;
-  
-  user-select: none;
-  pointer-events: none;
+  --color-fondo: #fbebdb;
 }
 
-/* ESTILOS GENERALES (HEREDITARIOS) */
 body
 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
   background-color: var(--color-fondo);
-  height: 100vh;
-  color: #ffff;
-  font-family: var(--general-font-family);
-  overflow-x: hidden;/* ocultar el contenido sobrante */
-}
-html,
-body
-{
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* ESTILOS DEL CONTENIDO */
-
-/* PARA TODO EL CONTENIDO */
-.contenedor-padre
+.container
 {
-  height: 100%;
-}
-
-/* UPPER BANNER */
-.banner-row
-{
-  min-height: 150px;
-}
-.img-titulo-menu
-{
-  transform: scale(2);  
-}
-
-/* BEBIDAS Y LOGO */
-.contenedor-general-bebidas-logo
-{
-  background-image: url("./img/fondo-logo-cafe-te-arte.svg");
-  background-size: cover;
-  background-repeat: no-repeat; 
-}
-.contenedor-bebidas
-{
-  position: relative;
-  display: inline-block;
-}
-
-.img-fondo-bebidas
-{
-  width: 50%;
-  height: auto;
-}
-
-.contenido-bebidas
-{
-  position: absolute;
-  top: 0; /* Desde el borde superior del contenedor */
-  left: 30px; /* Desde el borde izquierdo del contenedor */
-  padding: 10px;
-  transform: translateY(-50px);
-  border-radius: 5px;
-  font-size: 0.785rem;
-  color: var(--color-platillos-contenido); /* Establece el color del texto */
-  width: 45%;
-  height: 150%;
-}
-
-.bebidas-titulo
-{
-  position: relative;
-  display: inline-block; /* Alinea el contenido en línea */
-  transform: translate(-30px,-5px);
-  color: var(--color-fondo);
-}
-
-.fondo-titulo-bebidas
-{
-  width: 150px;
-  transform: scaleX(1.3);
-}
-
-.titulo
-{
-  position: absolute;
-  top: 50%; /* Coloca el texto en el centro vertical */
-  left: 50%; /* Coloca el texto en el centro horizontal */
-  transform: translate(-50%, -50%); /* Centra el texto */
-  padding: 10px; /* Añade espacio alrededor del texto */
-  border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
-  font-size: 25px; /* Establece el tamaño de fuente deseado */
-}
-/* Lista del menu bebidas */
-.bebida
-{
-  font-size: 12px;
-  font-weight: 900;
-}
-.precio
-{
-  font-size: 12px;
-  font-weight: 900;
-}
-.tipos-bebida
-{
-  font-size: 10px;
-}
-.nota-producto
-{
-  font-size: 8px;
-}
-.bebida-translation-agua-sabor
-{
-  transform: translateY(-30px);
-}
-.bebida-translation-coca
-{
-  transform: translateY(-70px);
-}
-.naranja-img
-{
-  margin-left: 100px;
-  translate: 30px -70px;
-}
-.img-logo-cafe-te-arte
-{
-  translate: -300px;
-  transform: scale(1.3);
-}
-
-/* IMG BURRITO Y POSTRES */
-.postres-row
-{
-  background-image: url("./img/fondo-logo-cafe-te-arte.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0;/* centrar con maximo */
-}
-.contenedor-burrito-postres
-{
+  height: 80%;
   display: flex;
 }
-.img-burrito
+
+img
 {
-  transform: translate(120%, 20%);
-  width: 30%;
-  z-index: 2;
-}
-.contenedor-postres
-{
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-}
-.postres-titulo
-{
-  position: relative;
-  display: inline-block; /* Alinea el contenido en línea */
-  transform: translate(20%,-90px);
-  color: var(--color-fondo);
-}
-.img-fondo-postres
-{
-  width: 50%;
-  height: auto;
-  transform: translate(-200px,-10px);
-}
-.contenido-postres
-{
-  position: absolute;
-  top: 55%; /* Desde el borde superior del contenedor */
-  left: 60%; /* Desde el borde izquierdo del contenedor */
-  padding: 10px;
-  transform: translate(-200px,-150px);
-  border-radius: 5px;
-  font-size: 0.785rem;
-  color: var(--color-platillos-contenido); /* Establece el color del texto */
-  width: 35%;
-  height: 150%;
-  
-}
-.fondo-titulo-postres
-{
-  width: 150px;
-  transform: scaleX(1.3);
-}
-.postre
-{
-  font-size: 15px;
-  font-weight: 900;
-}
-.tipos-postre
-{
-  font-size: 12px;
-}
-.precio-postre
-{
-  font-size: 15px;
-  font-weight: 900;
+  width: 100%;
 }
 
-/* DESAYUNOS IZQ */
-.desayunos-izq-row
-{
-  background-color: none;
+/* Estilos para el spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  z-index: 9999; /* Asegura que esté por encima de todo */
 }
-.contenedor-desayunos-izq
-{
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-}
-.desayunos-izq-titulo
-{
-  position: relative;
-  display: inline-block; /* Alinea el contenido en línea */
-  transform: translate(50%,-30px);
-  color: var(--color-fondo);
-}
-.img-fondo-desayunos-izq
-{
-  width: 70%;
-  height: auto;
-  transform: scaleY(1.5);  
-}
-.contenido-desayunos-izq
-{
-  position: absolute;
-  top: 0%; /* Desde el borde superior del contenedor */
-  left: 0%; /* Desde el borde izquierdo del contenedor */
-  padding: 10px;
-  transform: translate(0px,0px);
-  border-radius: 5px;
-  font-size: 0.785rem;
-  color: var(--color-platillos-contenido); /* Establece el color del texto */
-  width: 50%;
-  height: 150%;
-  
-}
-.fondo-titulo-desayunos-izq
-{
-  width: 150px;
-  transform: scaleX(2.3);
-}
-.desayuno-izq
-{
-  font-size: 15px;
-  font-weight: 900;
-}
-.tipos-desayuno-izq
-{
-  font-size: 12px;
-}
-.precio-desayuno-izq
-{
-  font-size: 15px;
-  font-weight: 900;
+
+/* Estilos para los spinners individuales */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
 }
 
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 1000px)
-{
-  
+#img-menu-cafe-te-arte {
+  display: none; 
+}
+
+.carga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-fondo);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+
+/* Define una animación de desaparición hacia arriba */
+@keyframes desaparecerArriba {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+    display: none;
+  }
+}
+
+/* Aplica la animación de desaparición a un elemento */
+.desaparecer-arriba {
+  animation: desaparecerArriba 1s ease forwards;
 }
